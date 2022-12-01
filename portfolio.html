@@ -10,7 +10,8 @@
     <h1 class="main_header">Portfolio</h1>
 
     <div>
-        <img class="main_img" src="addcontent/portfolio_photo.jpg" alt="">
+        <img class="main_img" src="addcontent/portfolio_photo.jpg" alt="" onclick="pictureClickHandler()"
+            onmouseenter="pictureMouseEnterHandler()" onmouseout="puctureMouseOutHandler()">
         <h2 class="img_title">Shevchenko Matvey Olegovich</h2>
         <p class="birth_date">Birth date: 12.07.2002</p>
         <p class="wise_tree">I like Wise Mystical Tree</p>
@@ -20,6 +21,16 @@
         <p>University : Dostoevsky Omsk State Unisersity</p>
         <p>Group : MPB-001-o-01</p>
     </div>
+
+    <br>
+
+    <form action="#" method="">
+        <div>
+            <label class="label" for="input1">Your Text: </label>
+            <input id="input1" class="input_first" tabindex="1" placeholder="" type=" text"
+                onchange="inputChangeHandler()">
+        </div>
+    </form>
 
     <footer>
         <br>
@@ -79,7 +90,18 @@
         background-color: #484a62
     }
 
+    .input_first {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .label {
+        display: flex;
+        justify-content: center;
+        color: aliceblue;
+    }
 
     .home_page_button {
         display: flex;
@@ -99,5 +121,8 @@
         border-radius: 7px;
     }
 </style>
+
+<script src="portfolio_interact.js"></script>
+
 
 </html>
