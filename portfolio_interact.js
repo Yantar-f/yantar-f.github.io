@@ -10,3 +10,6 @@ function puctureMouseOutHandler() {
     console.log("mouse out detected")
 }
 
+function inputChangeHandler() {
+    alert("input was changed");
+}
