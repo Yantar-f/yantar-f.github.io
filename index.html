@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+</head>
+
+<body class="main_body">
+    <h1 class="main_header">Portfolio</h1>
+
+    <div>
+        <img class="main_img" src="addcontent/portfolio_photo.jpg" alt="" onclick="pictureClickHandler()"
+            onmouseenter="pictureMouseEnterHandler()" onmouseout="puctureMouseOutHandler()">
+        <h2 class="img_title">Shevchenko Matvey Olegovich</h2>
+        <p class="birth_date">Birth date: 12.07.2002</p>
+        <p class="wise_tree">I like Wise Mystical Tree</p>
+    </div>
+
+    <div class="university_and_group">
+        <p>University : Dostoevsky Omsk State Unisersity</p>
+        <p>Group : MPB-001-o-01</p>
+    </div>
+
+    <br>
+
+    <form action="#" method="">
+        <div>
+            <label class="label" for="input1">Your Text: </label>
+            <input id="input1" class="input_first" tabindex="1" placeholder="" type=" text"
+                onchange="inputChangeHandler()">
+        </div>
+    </form>
+
+    <footer>
+        <br>
+        <a class="home_page_button" href="addcontent/home_page.html">Home Page</a>
+    </footer>
+</body>
+
+<style>
+    .main_body {
+        background-color: rgb(58, 58, 70);
+    }
+
+    .main_header {
+        display: flex;
+        justify-content: space-around;
+        color: aliceblue;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(84, 93, 120);
+    }
+
+    .main_img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        width: 200px;
+        padding: 10px;
+        background-color: black;
+    }
+
+    .img_title {
+        display: flex;
+        justify-content: center;
+        color: aliceblue;
+    }
+
+    .birth_date {
+        display: flex;
+        justify-content: center;
+        color: rgb(185, 197, 255);
+    }
+
+    .wise_tree {
+        display: flex;
+        justify-content: center;
+        color: rgb(140, 155, 255);
+        border-width: 2px;
+        border-color: aqua;
+        border-radius: 2px;
+        border-style: solid;
+    }
+
+    .university_and_group {
+        display: flex;
+        justify-content: space-around;
+        color: rgb(208, 214, 255);
+        background-color: #484a62
+    }
+
+    .input_first {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .label {
+        display: flex;
+        justify-content: center;
+        color: aliceblue;
+    }
+
+    .home_page_button {
+        display: flex;
+
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        justify-content: center;
+        /* Строчно-блочный элемент */
+        background: #8C959D;
+        /* Серый цвет фона */
+        color: #fff;
+        /* Белый цвет текста */
+        padding: 15px;
+        /* Поля вокруг текста */
+        text-decoration: none;
+        /* Убираем подчёркивание */
+        border-radius: 7px;
+    }
+</style>
+
+<script src="portfolio_interact.js"></script>
+
+
+</html>
